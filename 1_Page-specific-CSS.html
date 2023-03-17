@@ -11,6 +11,10 @@
 		}
 	}
 
+    .o-grid-checkered img {
+		max-width: 100%;
+	}
+
     .u-tone-background-custom {
         background-color: var(--92nygold);
     }
@@ -44,11 +48,42 @@
         font-size: 3.75rem;
     }
 
+    #section-events .flex-grid {
+        padding: 0;
+    }
 
+    @media (min-width: 50em) {
+        .flex-grid__item {
+            margin: 0 10px;
+        }
+    }
 
     #section-program-areas h2,
     .section-title-suffix {
         text-transform: uppercase;
     }
 
+    #section-events .o-2col__secondary {
+        margin-bottom: 0;
+    }
+
+    #section-events h1 {
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 42px;
+        line-height: .85;
+    }
+
+    @media (min-width: 50em) {
+        #section-events h1 {
+            font-size: 4.5vw;
+        }
+    }
+
+    @media (min-width: 82em) {
+        #section-events h1 {
+            font-size: 62px;
+        }
+    }
+    
     </style>
