@@ -1,18 +1,66 @@
 <style type="text/css">
-    	:root {
+    :root {
 		--92nygold: #D7A95A;
 	}
-    	.o-grid-checkered {
+    .o-grid-checkered_row {
 		display: grid;
 	}
     @media (min-width: 35em) {
-		.o-grid-checkered {
+        #section-program-areas .u-constrained {
+            width: 100%;
+        }
+		.o-grid-checkered .o-grid-checkered_row {
 			grid-template-columns: repeat(2, 50%);
 		}
+
+        .o-grid-checkered_row .o-grid-checkered__item:first-child {
+            padding: 2em;
+        }
+
+        .o-grid-checkered_row:nth-child(even) .o-grid-checkered__item:nth-child(2) {
+            order: -1;
+        }
+	}
+
+    @media (min-width: 90em) {
+		.o-grid-checkered_row .o-grid-checkered__item:first-child {
+            padding: 2em 2em 2em 0;
+        }
+
+        .o-grid-checkered_row:nth-child(even) .o-grid-checkered__item:first-child {
+            padding: 2em 0 2em 2em;
+        }
 	}
 
     .o-grid-checkered img {
 		max-width: 100%;
+        display: block;
+	}
+
+    @media (min-width: 90em) {
+		.o-grid-checkered img {
+			max-width: 109%;
+		}
+	}
+
+    @media (min-width: 100em) {
+		.o-grid-checkered img {
+			max-width: 120%;
+		}
+	}  
+
+    @media (min-width: 90em) {
+		.o-grid-checkered_row:nth-child(even) img {
+            position: relative;
+            right: 9%;
+        }
+	}
+
+    @media (min-width: 100em) {
+		.o-grid-checkered_row:nth-child(even) img {
+            position: relative;
+            right: 20%;
+        }
 	}
 
     .u-tone-background-custom {
@@ -59,8 +107,22 @@
     }
 
     #section-program-areas h2,
-    .section-title-suffix {
+    #section-program-areas h3 {
         text-transform: uppercase;
+    }
+
+    #section-program-areas h3 {
+        font-weight: 400;
+    }
+
+    @media (min-width: 50em) {
+        #section-program-areas h2 {
+            font-size: 2.25em;
+        }
+
+        #section-program-areas h3 {
+            font-size: 1.5rem;
+        }
     }
 
     #section-events .o-2col__secondary {
