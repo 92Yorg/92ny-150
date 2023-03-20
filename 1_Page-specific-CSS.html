@@ -1,10 +1,71 @@
-<style type="text/css">
-    :root {
+<style type="text/css">:root {
 		--92nygold: #D7A95A;
 	}
     .o-grid-checkered_row {
 		display: grid;
 	}
+/*Events Z Grid*/
+.o-grid-checkered_row {
+align-items: center;
+justify-items: center;
+}
+
+
+
+/*Special events CSS*/
+        .special-top {
+            display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+        }
+        .special-prog-card {
+            height: 250px;
+            width: 200px;
+            background: pink;
+            display: flex;
+    align-items: center;
+    justify-content: center;
+        }
+        .special-content {
+            height: 80%;
+            width: 75%;
+            background: #ffffff69;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .2s ease-in-out;;
+        }
+        .special-content:hover {
+            transform: scale(1.35);
+            cursor: pointer;
+        }
+        .special-prog-title {
+            max-width: 400px;
+        }
+        .special-bottom {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0 0 0;
+        }
+        .blank-spacer {
+            margin: 0 20px 0 0;
+        }
+        .special-content h3 {
+            text-align: center;
+            padding: 10px;
+        }
+.special-prog-title {
+    font-size: 42px;
+}
+
+
+
+
+
+
+
     @media (min-width: 35em) {
         #section-program-areas .u-constrained {
             width: 100%;
@@ -147,5 +208,4 @@
             font-size: 62px;
         }
     }
-    
-    </style>
+</style>
