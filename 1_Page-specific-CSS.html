@@ -258,13 +258,16 @@
 		font-size: 42px;
 	}
 
+
+	/* Checkered Grid */
+
 	.o-grid-checkered_row {
 		display: grid;
 		align-items: center;
 	}
 
 	@media (min-width: 35em) {
-		#section-program-areas .u-constrained, #section-story .u-constrained {
+		.o-grid-checkered.u-constrained {
 			width: 100%;
 		}
 		.o-grid-checkered .o-grid-checkered_row {
@@ -281,7 +284,7 @@
 	}
 
 	@media (min-width: 35em) and (max-width: 81.24em) {
-		#section-program-areas .u-constrained, #section-story .u-constrained {
+		.o-grid-checkered.u-constrained {
 			margin: 0;
 		}
 	}
