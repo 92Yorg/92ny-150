@@ -209,15 +209,6 @@
     clip-path: inset(0% 0% 0% 0% round 10px) !important;
 }
 
-    
-    .o-grid-checkered_row {
-		display: grid;
-	}
-	/*Events Z Grid*/
-	.o-grid-checkered_row {
-		align-items: center;
-		justify-items: center;
-	}
 
 	/*Special events CSS*/
 	.special-top {
@@ -267,29 +258,40 @@
 		font-size: 42px;
 	}
 
+	.o-grid-checkered_row {
+		display: grid;
+		align-items: center;
+	}
+
 	@media (min-width: 35em) {
-		#section-program-areas .u-constrained {
+		#section-program-areas .u-constrained, #section-story .u-constrained {
 			width: 100%;
 		}
 		.o-grid-checkered .o-grid-checkered_row {
 			grid-template-columns: repeat(2, 50%);
 		}
 
-		.o-grid-checkered_row .o-grid-checkered__item:first-child {
+		.o-grid-checkered_row .o-grid-checkered__item--text {
 			padding: 2em;
 		}
 
-		.o-grid-checkered_row:nth-child(even) .o-grid-checkered__item:nth-child(2) {
+		.o-grid-checkered_row:nth-child(odd) .o-grid-checkered__item--text {
 			order: -1;
 		}
 	}
 
+	@media (min-width: 35em) and (max-width: 81.24em) {
+		#section-program-areas .u-constrained, #section-story .u-constrained {
+			margin: 0;
+		}
+	}
+
 	@media (min-width: 90em) {
-		.o-grid-checkered_row .o-grid-checkered__item:first-child {
+		.o-grid-checkered_row .o-grid-checkered__item--text {
 			padding: 2em 2em 2em 0;
 		}
 
-		.o-grid-checkered_row:nth-child(even) .o-grid-checkered__item:first-child {
+		.o-grid-checkered_row:nth-child(even) .o-grid-checkered__item--text {
 			padding: 2em 0 2em 2em;
 		}
 	}
