@@ -1,14 +1,22 @@
 <style type="text/css">
 	:root {
 		--92nygold: #d7a95a;
+        --gold-lt: #F2EAD6;
 	}
+
+    .u-tone-background-custom-dk {
+		background-color: var(--92nygold);
+	}
+
+    .u-tone-background-custom-lt {
+        background-color: var(--gold-lt);
+    }
 	
     /* Hero styling */
     #section-hero {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: #F2EAD6;
     justify-content: center;
     align-items: center;
 }
@@ -162,20 +170,18 @@ h1 {
     border-top: 1px solid #000;
     padding-top: 15px;
 }
-.TTW-container h3, .TTW-container p, .TTW-container span {
-    color: #000;
-    font-family: '';
-    font-family: "Theinhardt Pan", Helvetica, Arial, sans-serif;
+.TTW-container h3 {
+    
     margin: 0px;
 }
-.TTW-container p {
+/* .TTW-container p {
     background-color: #D8B866;
     padding: 10px 15px;
     text-align: center;
     margin-top: 10px;
-}
-.TTW-container p>a {
-    text-decoration: none;
+} */
+.TTW-container .btn {
+    background-color: var(--92nygold);
     color: #000;
 }
 .content img {
@@ -322,9 +328,6 @@ h1 {
 		}
 	}
 
-	.u-tone-background-custom {
-		background-color: var(--92nygold);
-	}
 
 	.navigation-grid--inverted .navigation-item.has-image:hover {
 		background-color: var(--92nygold);
