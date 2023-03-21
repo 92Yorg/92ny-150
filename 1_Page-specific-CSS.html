@@ -2,7 +2,212 @@
 	:root {
 		--92nygold: #d7a95a;
 	}
-	.o-grid-checkered_row {
+	
+    /* Hero styling */
+    #section-hero {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #F2EAD6;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-container{
+    width: 480px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    left: 110px;
+    height: 100px;
+    top: -40px;
+}
+
+.cards-container .card{
+    position: relative;
+    cursor: pointer;
+}
+
+.cards-container .card .face{
+    transition: 0.5s;
+}
+
+.cards-container .card .face.face1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(0px);
+    transform: translateX(0px);
+}
+
+.content img {
+    clip: rect(110px, 160px, 170px, 60px);
+    transition: 0.2s;
+}
+
+
+.cards-container .card:hover .face.face1{
+    transform: translateY(0);
+    /*z-index: 2;*/
+    transform: translateX(-100px);
+    top: 50px;
+}
+
+.cards-container .card .face.face1 .content{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.cards-container .card:hover .face.face1 .content{
+    opacity: 1;
+    scale: 4;
+}
+
+.content h3 {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.cards-container .card .face.face1 .content img{
+    max-width: 100px;
+}
+
+.cards-container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.cards-container .card .face.face2{
+    position: absolute;
+    top: 160px;
+    left: -270px;
+    z-index: 2;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    max-width: 240px;
+}
+
+.cards-container .card:hover .face.face2{
+    transform: translateX(-0);
+    opacity: 1;
+    top: 230px;
+}
+
+.cards-container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.cards-container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.cards-container .card .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+}
+.inner-flex {
+    display: flex;
+}
+.inner-flex p {
+    font-family: "Theinhardt Pan", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+.hero-container {
+    min-height: 550px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 95px;
+    font-family: '92NY Headline';
+    font-weight: 100;
+    line-height: 80%;
+    color: #000;
+}
+.title-byline {
+    color: #000;
+    width: 300px;
+    margin: 0 auto;
+}
+.title-byline p {
+    font-family: "Theinhardt Pan", Helvetica, Arial, sans-serif;
+}
+.TTW-container {
+    position: absolute;
+    right: 80px;
+    top: 330px;
+    max-width: 170px;
+    border-top: 1px solid #000;
+    padding-top: 15px;
+}
+.TTW-container h3, .TTW-container p, .TTW-container span {
+    color: #000;
+    font-family: '';
+    font-family: "Theinhardt Pan", Helvetica, Arial, sans-serif;
+    margin: 0px;
+}
+.TTW-container p {
+    background-color: #D8B866;
+    padding: 10px 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+.TTW-container p>a {
+    text-decoration: none;
+    color: #000;
+}
+.content img {
+    clip-path: inset(10% 0% 20% 0% round 10px);
+    transition: 0;
+}
+.content img:hover {
+    clip-path: unset;
+}
+.years-container {
+    position: absolute;
+    top: 453px;
+    right: 820px;
+}
+.face.face2 {
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+.years-container img {
+    max-width: 620px;
+}
+.inner-flex img {
+    clip-path: inset(0% 0% 0% 0% round 10px) !important;
+}
+
+    
+    .o-grid-checkered_row {
 		display: grid;
 	}
 	/*Events Z Grid*/
